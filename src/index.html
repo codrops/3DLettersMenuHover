@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3D Letters Menu Hover Effect | Codrops</title>
+	<meta name="description" content="A hover animation for a menu with 3D letters and image effect." />
+	<meta name="keywords" content="gsap, animation, 3d, hover, menu, image, web design, javascript, template" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/pkk0kuo.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+<body class="loading">
+	<main>
+		<div class="frame">
+			<h1 class="frame__title">3D Letters Menu Hover Effect</h1>
+			<div class="frame__links">
+				<a href="http://tympanus.net/Development/3DGridContentPreview/" class="frame__link">Previous demo</a>
+				<a href="https://tympanus.net/codrops/?p=54446" class="frame__link">Article</a>
+				<a href="https://github.com/codrops/3DLettersMenuHover/" class="frame__link">GitHub</a>
+			</div>
+			<a class="frame__author noline" href="https://twitter.com/codrops">@codrops</a>
+			<a class="frame__related noline" href="https://tympanus.net/codrops/category/playground/">More demos</a>
+		</div>
+		<nav class="menu">
+			<a class="menu__item" data-img="img/1.jpg">
+				<span class="menu__item-text" data-splitting>Gotiva</span>
+			</a>
+			<a class="menu__item" data-img="img/2.jpg">
+				<span class="menu__item-text" data-splitting>Hava</span>
+			</a>
+			<a class="menu__item" data-img="img/3.jpg">
+				<span class="menu__item-text" data-splitting>Sikter</span>
+			</a>
+			<a class="menu__item" data-img="img/4.jpg">
+				<span class="menu__item-text" data-splitting>Valo</span>
+			</a>
+			<a class="menu__item" data-img="img/5.jpg">
+				<span class="menu__item-text" data-splitting>Opanci</span>
+			</a>
+			<a class="menu__item" data-img="img/6.jpg">
+				<span class="menu__item-text" data-splitting>Insan</span>
+			</a>
+		</nav>
+		<p class="content">
+			Sinoć kad se vraćah iz topla hamama,<br>
+			prođoh pokraj bašče staroga imama.<br>
+			Kad tamo u bašči, u hladu jasmina<br>
+			s ibrikom u ruci stajaše Emina.<br>
+			Ja kakva je pusta! Tako mi imana,<br>
+			stid je ne bi bilo da je kod sultana.<br>
+			Pa još kada šeće i plećima kreće,<br>
+			ni hodžin mi zapis više pomoć' neće!<br>
+			Ja joj nazvah selam. Al' moga mi dina,<br>
+			ne šće ni da čuje lijepa Emina,<br>
+			već u srebrn ibrik zahvatila vode,<br>
+			pa niz bašču đule zaljevati ode.
+		</p>
+	</main>
+	<svg class="cursor" width="20" height="20" viewBox="0 0 20 20">
+		<circle class="cursor__inner" cx="10" cy="10" r="5"/>
+	</svg>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "3DLettersMenuHover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codrops/3DLettersMenuHover.git"
+  },
+  "keywords": [],
+  "author": "Codrops",
+  "license": "MIT",
+  "homepage": "https://tympanus.net/codrops",
+  "bugs": {
+    "url": "https://github.com/codrops/3DLettersMenuHover/issues"
+  },
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "imagesloaded": "^4.1.4",
+    "splitting": "^1.0.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
